@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(
+          135deg,
+          rgb(7, 105, 114),
+          rgb(230, 139, 139)
+        );
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        background: linear-gradient(135deg, rgb(132, 217, 225), white);
+        border-radius: 8px;
+        padding: 30px;
+        width: 350px;
+        border: 2px solid black;
+        box-shadow: 2px 2px 2px rgb(12, 12, 12);
+      }
+      .name-container {
+        display: flex;
+        gap: 20px;
+      }
+      h2 {
+        color: #0d3f80;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: #ccc7d4;
+      }
+      button {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(121, 121, 237);
+        color: white;
+      }
+      button:hover {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Sign Up</h2>
+      <form>
+        <div class="name-container">
+          <input type="text" placeholder="First name" />
+          <input type="text" placeholder="Last name" />
+        </div>
+        <input type="email" name="" id="" placeholder="Email" />
+        <input type="password" name="" id="" placeholder="Password" />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </body>
+</html>
