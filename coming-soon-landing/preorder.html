@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming-soon-page</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100%;
+      }
+      .container {
+        background: linear-gradient(
+          135deg,
+          rgb(35, 107, 53),
+          rgb(67, 234, 243)
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .content {
+        text-align: center;
+        background: linear-gradient(
+          145deg,
+          rgb(176, 239, 163),
+          rgb(116, 236, 234)
+        );
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 350px;
+        box-shadow: 0px 4px 6px rgb(12, 12, 12);
+      }
+      .product-pic {
+        width: 300px;
+        height: 400px;
+        filter: drop-shadow(3px 3px 6px rgba(115, 238, 249, 0.4));
+      }
+      button {
+        box-shadow: 1px 1px 1px rgb(21, 118, 236);
+        background-color: rgb(58, 149, 233);
+      }
+      button:hover {
+        background-color: rgb(14, 68, 129);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img src="device.png" class="product-pic" alt="product" />
+        <button type="submit">Pre-order</button>
+      </div>
+    </div>
+  </body>
+</html>
