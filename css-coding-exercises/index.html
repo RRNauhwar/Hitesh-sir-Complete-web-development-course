@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: linear-gradient(
+          145deg,
+          rgb(34, 255, 159),
+          rgb(183, 247, 161)
+        );
+      }
+      .change-text-color p {
+        color: blue;
+      }
+      .style-a-button button {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+      }
+      .dashed-border div {
+        border: 3px solid black;
+        border-style: dashed;
+        border-radius: 10px;
+        display: inline;
+      }
+      .styled-text {
+        color: red;
+        font-weight: bold;
+        font-size: 18px;
+        font-style: italic;
+      }
+      .box {
+        padding: 20px;
+        margin: 30px;
+        background-color: blue;
+        color: white;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: red;
+      }
+      .shadow-box {
+        width: 200px;
+        height: 200px;
+        box-shadow: 10px 10px 15px grey;
+      }
+      .parent-container {
+        position: relative;
+        margin-bottom: 100px;
+      }
+
+      .static-box {
+        position: static; /* explicitly required */
+        background-color: lightblue;
+      }
+
+      .relative-box {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        background-color: lightgreen;
+      }
+
+      .absolute-box {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        background-color: salmon;
+      }
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap; /* wrap always */
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: yellow;
+      }
+
+      .flex-item {
+        flex: 1 1 100px;
+        min-width: 100px;
+        height: 50px;
+        background-color: red;
+      }
+
+      /* Mobile: stack items */
+      @media (max-width: 800px) {
+        .flex-item {
+          flex: 1 1 100%;
+        }
+      }
+
+      /* Tablet: 2 items per row */
+      @media (min-width: 801px) and (max-width: 1024px) {
+        .flex-item {
+          flex: 1 1 45%;
+        }
+      }
+
+      /* Desktop: 3 items per row */
+      @media (min-width: 1025px) {
+        .flex-item {
+          flex: 1 1 30%;
+        }
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        max-width: 600px;
+        margin: auto;
+        padding: 10px;
+      }
+      .grid-item {
+        background-color: rgb(15, 175, 228);
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 8px;
+        aspect-ratio: 1/1;
+      }
+      @media (max-width: 600px) {
+        .grid-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 400px) {
+        .grid-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="change-text-color">
+      <h3>1. Check Text Color</h3>
+      <p>This text is blue</p>
+    </div>
+    <div class="style-a-button">
+      <h3>2. Style a Button</h3>
+      <button>Demo Button</button>
+    </div>
+    <div class="dashed-border">
+      <h3>3. Div with dashed border</h3>
+      <div>Dashed Border Div</div>
+    </div>
+    <div class="styling-text">
+      <h3>4. Styling Text with Font Properties</h3>
+      <p class="styled-text">Styled Text</p>
+    </div>
+    <div class="padding-margin">
+      <h3>5. Box with Padding and Margin</h3>
+      <div class="box"><p>Box with Padding and Margin</p></div>
+    </div>
+    <div>
+      <h3>6. Circle using Border Radius</h3>
+      <div class="circle"></div>
+    </div>
+    <div>
+      <h3>7. Box shadow to an Element</h3>
+      <div class="shadow-box"></div>
+    </div>
+    <div>
+      <h3>8. Positions In CSS</h3>
+      <div class="parent-container">
+        <div class="static-box">Static Box</div>
+        <div class="relative-box">Relative Box</div>
+        <div class="absolute-box">Absolute Box</div>
+      </div>
+    </div>
+    <div>
+      <h3>9. Responsive Flexbox Layout</h3>
+      <div class="flex-container">
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+      </div>
+    </div>
+    <div>
+      <h3>10. 3x3 Grid Layout</h3>
+      <div class="grid-container">
+        <div class="grid-item grid-item1"></div>
+        <div class="grid-item grid-item2"></div>
+        <div class="grid-item grid-item3"></div>
+        <div class="grid-item grid-item4"></div>
+        <div class="grid-item grid-item5"></div>
+        <div class="grid-item grid-item6"></div>
+        <div class="grid-item grid-item7"></div>
+        <div class="grid-item grid-item8"></div>
+        <div class="grid-item grid-item9"></div>
+      </div>
+    </div>
+  </body>
+</html>
