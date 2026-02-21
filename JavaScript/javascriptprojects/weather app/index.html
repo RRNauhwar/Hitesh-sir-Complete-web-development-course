@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    <div class="container">
+      <div class="top-bar">
+        <div class="location-search">
+          <input type="text" id="cityInput" placeholder="Search Location" />
+          <button id="searchBtn">🔍</button>
+        </div>
+
+        <div class="date-day">
+          <h2 id="cityName">City Name</h2>
+          <h3 id="currentDay">Current day</h3>
+          <p id="currentDate">Current date</p>
+        </div>
+      </div>
+
+      <div class="main-weather">
+        <div class="left-weather">
+          <h1 id="temperature">--°C</h1>
+          <h2 id="description">Weather Description</h2>
+
+          <div class="extra-info">
+            <div class="info-box">
+              <span>🌬</span>
+              <p>Wind</p>
+              <h4 id="windSpeed">-- km/h</h4>
+            </div>
+            <div class="info-box">
+              <span>💧</span>
+              <p>Humidity</p>
+              <h4 id="humidity">-- %</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-forecast">
+          <div class="day-card">
+            <p id="day1">Day 1</p>
+            <h4 id="temp1">--°</h4>
+          </div>
+          <div class="day-card">
+            <p id="day2">Day 2</p>
+            <h4 id="temp2">--°</h4>
+          </div>
+          <div class="day-card">
+            <p id="day3">Day 3</p>
+            <h4 id="temp3">--°</h4>
+          </div>
+          <div class="day-card">
+            <p id="day4">Day 4</p>
+            <h4 id="temp4">--°</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="hourly-slider">
+        <button id="prevBtn" class="nav-btn">❮</button>
+
+        <div class="slider" id="hourSlider">
+          <div class="hour-card">
+            <p id="time1">--</p>
+            <h4 id="hourTemp1">--°</h4>
+          </div>
+          <div class="hour-card">
+            <p id="time2">--</p>
+            <h4 id="hourTemp2">--°</h4>
+          </div>
+          <div class="hour-card">
+            <p id="time3">--</p>
+            <h4 id="hourTemp3">--°</h4>
+          </div>
+          <div class="hour-card">
+            <p id="time4">--</p>
+            <h4 id="hourTemp4">--°</h4>
+          </div>
+          <div class="hour-card">
+            <p id="time5">--</p>
+            <h4 id="hourTemp5">--°</h4>
+          </div>
+          <div class="hour-card">
+            <p id="time6">--</p>
+            <h4 id="hourTemp6">--°</h4>
+          </div>
+          <div class="hour-card">
+            <p id="time7">--</p>
+            <h4 id="hourTemp7">--°</h4>
+          </div>
+          <div class="hour-card">
+            <p id="time8">--</p>
+            <h4 id="hourTemp8">--°</h4>
+          </div>
+          <div class="hour-card">
+            <p id="time9">--</p>
+            <h4 id="hourTemp9">--°</h4>
+          </div>
+          <div class="hour-card">
+            <p id="time10">--</p>
+            <h4 id="hourTemp10">--°</h4>
+          </div>
+        </div>
+
+        <button id="nextBtn" class="nav-btn">❯</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
